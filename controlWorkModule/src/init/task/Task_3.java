@@ -12,7 +12,9 @@ public class Task_3 {
         System.out.println("Enter any word");
         String str = scanner.nextLine();
 
-        StringBuffer reverseStr = new StringBuffer(str);
-        System.out.println(reverseStr.reverse());
+        for (int i = str.length()-1; i >= 0; i--) {
+            String ch = String.valueOf(str.charAt(i));
+            System.out.print(ch);
+        }
     }
 }

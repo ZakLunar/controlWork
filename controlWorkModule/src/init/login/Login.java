@@ -1,10 +1,11 @@
 package init.login;
 
 public class Login {
-    public static int loginTo(String logName, String logPass) {
 
-        String name = "Bohdan";  //
-        String pass = "pass";    //  Storage
+    static String name = "Bohdan";  // STORAGE
+    static String pass = "pass";    // STORAGE
+
+    public static int loginTo(String logName, String logPass) {
 
         int validationPass = pass.length(); //
 
@@ -17,13 +18,3 @@ public class Login {
         }
     }
 }
-
-//        if (logName.equals(name) && validationPass == logPass.length()){
-//                System.out.println("Hello, Bohdan");
-//                } else if (logName.equals(name) ^ validationPass != logPass.length()) {
-//                System.out.println("error: Your credential is incorrect");
-//                } else if (validationPass != logPass.length()){
-//                System.out.println("error: Your input Password is incorrect");
-//                } else {
-//                System.out.println("error: Your Name is incorrect");
-//                }

@@ -1,21 +1,30 @@
 package init.task;
 
 //ToDo 2. Armstrong (Напишите программу для проверки является ли введенное число -числом Армстронга.
-// Число Армстронга это число, значение которого равно сумме цифр, из которых оно состоит, возведенных в степень, равную количеству цифр в этом числе.
+// Число Армстронга это число, значение которого равно сумме цифр, из которых оно состоит, возведенных в степень, равную количеству цифр в этом числе.)
 
 public class Task_2 {
-    public static void armstrong (int enterNumber){
+    private final int number;
 
-        String strNumber = Integer.toString(enterNumber);
+    public Task_2(int number) {
+        this.number = number;
+    }
+    public void armstrong (){
 
-        String[] array = strNumber.split("");
+        String strEnterNumber = Integer.toString(number); //toString
+        String[] array = strEnterNumber.split(""); //toArray
 
-        for (int i = 0; i < array.length; i++) {
+        double armstrong = 0;
 
+        for (String s : array) {
+            int temp = Integer.parseInt(s);
+            armstrong = armstrong + Math.pow(temp, array.length);
         }
-//=====================
-        for (String j : array){
-            System.out.println(j);
+
+        if(armstrong == number) {
+            System.out.println("Your number is Armstrong - " + (int) armstrong);
+        } else {
+            System.out.println("Your number isn't Armstrong - " + (int) armstrong);
         }
     }
 }

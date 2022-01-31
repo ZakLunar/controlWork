@@ -1,7 +1,8 @@
 package init.task;
 
 //ToDo 2. Armstrong (Напишите программу для проверки является ли введенное число -числом Армстронга.
-// Число Армстронга это число, значение которого равно сумме цифр, из которых оно состоит, возведенных в степень, равную количеству цифр в этом числе.)
+// Число Армстронга это число, значение которого равно сумме цифр, из которых оно состоит,
+// возведенных в степень, равную количеству цифр в этом числе.)
 
 public class Task_2 {
     private final int number;
@@ -22,9 +23,9 @@ public class Task_2 {
         }
 
         if(armstrong == number) {
-            System.out.println("Your number is Armstrong - " + (int) armstrong);
+            System.out.println("Your number(" + (int) armstrong + ") is Armstrong");
         } else {
-            System.out.println("Your number isn't Armstrong - " + (int) armstrong);
+            System.out.println("Your number(" + number + ") isn't Armstrong");
         }
     }
 }

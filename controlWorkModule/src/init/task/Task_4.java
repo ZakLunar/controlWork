@@ -7,7 +7,7 @@ public class Task_4 {
     public static void fibonacci () {
         int count = 49;
 
-        System.out.print("First Fibonacci numbers - " + num1 + " " + num2 + " ");
+        System.out.print("First 50 Fibonacci numbers - " + num1 + " " + num2 + " ");
 
         for (int i = 0; i < count; i++) {
             num3=num1+num2;

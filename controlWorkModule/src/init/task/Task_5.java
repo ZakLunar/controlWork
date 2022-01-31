@@ -16,7 +16,7 @@ public class Task_5 {
     public static void replace (){
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Enter any string with \"a\" and \"o\"");
+        System.out.println("Enter any string using these letters - \"a\" and \"o\"");
         String str = scanner.nextLine();
 
         if(str.length() <= 30 && str.length() >= 1) {
@@ -25,7 +25,7 @@ public class Task_5 {
                 str = str.replace("o", "0");
                 System.out.println("Your improvement string xD - " + str);
             } else {
-                System.out.println("Your sting aren't contain important word");
+                System.out.println("Your string doesn't contain the right letters");
             }
         } else if (str.length() < 1) {
             System.out.println("Your string is to short");

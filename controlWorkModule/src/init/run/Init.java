@@ -17,10 +17,10 @@ public class Init {
         int state = Login.loginTo(logName, logPass);
 
         if (state == 0) {
-            System.out.println("END");
+            System.out.println("=== EXIT ===");
             return;
         } else {
-            System.out.println("Please, choose the task to run and enter number of task\n 1. Even Task\n 2. Armstrong\n 3. Reverse\n 4. Fibonacci\n 5. Replace");
+            System.out.println("Please, enter number of task to run\n 1. Even Task\n 2. Armstrong\n 3. Reverse\n 4. Fibonacci\n 5. Replace");
         }
 
         int task = scanner.nextInt();

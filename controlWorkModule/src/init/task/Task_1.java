@@ -12,9 +12,9 @@ public class Task_1 {
 
     public void evenNumber(){
          if (number%2 == 0){
-             System.out.println("Your number is even");
+             System.out.println("Your number(" + number + ") is even");
          } else {
-             System.out.println("Your number isn't even");
+             System.out.println("Your number(" + number + ") isn't even");
          }
     }
 }
